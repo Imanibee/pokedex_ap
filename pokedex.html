@@ -30,10 +30,23 @@
             <input type="text" id="search" placeholder="Search Pokémon by name or ID" class="w-full p-2 border border-gray-300 rounded">
             <div id="search-results"></div>
         </div>
+        <div class="mb-4">
+            <select id="type-filter" class="w-full p-2 border border-gray-300 rounded">
+                <option value="">Filter by Type</option>
+            </select>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="pokemon-details"></div>
         <div class="pagination">
             <button id="prev-btn" disabled>Previous</button>
             <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="pokemon-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content"></div>
         </div>
     </div>
 
